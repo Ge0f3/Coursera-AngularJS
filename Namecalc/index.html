@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html >
+<head>
+	<title>Hello coursera</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	
+	<script type="text/javascript" src="angular.min.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+</head>
+<body ng-app='namecalc'>
+	
+		<div style="background:aquawhite !important" class="jumbotron">
+			<h1>Hello coursera</h1>
+		</div>
+		
+			<div class="container" ng-controller="calculator" >
+				<div class="row">
+					<div class="col-sm-4">
+						<div class="card">
+                    <div class="card-header">
+                        Name-Caculator
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Enter your name</h5>
+                        <input type="text" class="form-control" placeholder="Enter your name" ng-model="name" ng-keyup='displaynumeric();'>
+                        <br>
+                        <h5>The numberical value of your name is {{value}}</h5>
+                    </div>
+
+                </div>
+					</div>
+					
+				</div>
+			</div>
+	
+	
+
+</body>
+</html>
